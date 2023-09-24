@@ -14,4 +14,7 @@ public string SendMessage(string message)
         };
     request.AddJsonBody(JsonConvert.SerializeObject(requestBody));
     var response = _client.Execute(request);
+    var jsonResponse = JsonConvert.DeserializeObject<dynamic>(response.Content ?? string.Empty);
+
+
 }
