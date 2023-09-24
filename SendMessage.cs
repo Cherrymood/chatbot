@@ -13,4 +13,5 @@ public string SendMessage(string message)
             temperature = 0.7,
         };
     request.AddJsonBody(JsonConvert.SerializeObject(requestBody));
+    var response = _client.Execute(request);
 }
