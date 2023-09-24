@@ -6,7 +6,7 @@
                 var chatGPTClient = new ChatGPTClient(apiKey);
 
                 Console.WriteLine("Welcome to the ChatGPT chatbot! Type 'exit' to quit.");
-            while (true)
+                while (true)
                 {
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("You: ");
